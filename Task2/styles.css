@@ -49,19 +49,19 @@ main {
   padding-bottom: 10px;
   font-family: customfont;
   color: white;
-  font-size: 1.125rem;
+  font-size: 1.5rem;
   align-items: center;
 }
 .pagewrapper main .NewHere h2 {
   font-family: customfontbold;
-  font-size: 2.5rem;
+  font-size: 3rem;
   margin-bottom: 30px;
   text-align: center;
 }
 .pagewrapper main .NewHere p {
   text-align: center;
-  width: 300px;
-  line-height: 2;
+  width: 400px;
+  line-height: 1.6;
   margin-bottom: 30px;
 }
 .maininfo {
