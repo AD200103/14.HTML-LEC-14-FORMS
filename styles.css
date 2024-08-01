@@ -1,0 +1,173 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+.pagewrapper {
+  background-image: url(evernote-background-color.png);
+  background-repeat: no-repeat;
+  background-size: cover;
+  width: 100%;
+  min-height: 100vh;
+  padding-top: 50px;
+  padding-bottom: 50px;
+  display: grid;
+  grid-template-columns: 40%;
+  grid-template-rows: 100%;
+  justify-content: center;
+}
+main {
+  background-color: white;
+  border-radius: 10px;
+  padding: 30px;
+  display: grid;
+  justify-content: center;
+  align-content: space-between;
+  justify-items: center;
+  grid-template-columns: 1fr;
+  grid-template-rows: repeat(5, fit-content);
+  box-shadow: 0px 0px 14px 8px rgba(0, 0, 0, 0.75);
+}
+.evernotelogo {
+  width: 250px;
+  height: 135px;
+  object-fit: cover;
+}
+.logo {
+  display: grid;
+  justify-items: center;
+  align-items: center;
+  font-family: Arial, Helvetica, sans-serif;
+  font-weight: 500;
+  font-size: 1.1rem;
+  gap: 20px;
+}
+.buttons {
+  display: grid;
+  justify-items: center;
+  gap: 5px;
+}
+.buttons button,
+fieldset button {
+  border: none;
+  width: 300px;
+  height: 40px;
+  color: rgb(95, 92, 92);
+  font-weight: 500;
+  border: 2px solid rgb(199, 196, 196);
+  border-radius: 10px;
+  background-color: transparent;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 20px;
+  font-size: 1rem;
+}
+.buttons fieldset button {
+  background-color: rgb(5, 185, 5);
+  border: none;
+  color: white;
+}
+.buttons fieldset button:hover {
+  scale: 1.01;
+  cursor: pointer;
+}
+
+.buttons button:hover {
+  border-color: rgb(116, 116, 247);
+  cursor: pointer;
+}
+.google {
+  width: 24px;
+  height: 24px;
+}
+fieldset {
+  border: 1px solid rgb(190, 187, 187);
+  text-align: center;
+  border-bottom: none;
+  border-right: none;
+  border-left: none;
+  width: 300px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 5px;
+  vertical-align: middle;
+  font-family: Arial, Helvetica, sans-serif;
+  color: rgb(190, 187, 187);
+  padding-top: 17px;
+  margin-top: 12px;
+}
+fieldset legend span {
+  margin-left: 5px;
+  margin-right: 5px;
+}
+fieldset .text {
+  all: unset;
+  width: 256.8px;
+  height: 36.8px;
+  color: rgb(95, 92, 92);
+  font-weight: 500;
+  border: 2px solid rgb(215, 212, 212);
+  border-radius: 10px;
+  background-color: transparent;
+  text-align: left;
+  padding-left: 20px;
+  padding-right: 20px;
+}
+fieldset ::placeholder {
+  color: rgb(217, 211, 211);
+}
+fieldset .text:focus {
+  transition: 700ms;
+  border: 2px solid rgb(183, 238, 183);
+  box-shadow: 0px 0px 7px 2px rgb(183, 238, 183);
+}
+.checkbox {
+  appearance: none;
+  width: 16px;
+  height: 16px;
+  border: 2px solid rgb(175, 172, 172);
+  border-radius: 2px;
+  background-color: transparent;
+  vertical-align: middle;
+  cursor: pointer;
+}
+.checkbox:checked {
+  background-image: url(check-mark-black-outline-svgrepo-com-svg.svg);
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+.remembermeDonhaveanaccount form {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 5px;
+}
+.checkboxtext {
+  color: rgb(175, 172, 172);
+  font-family: Arial, Helvetica, sans-serif;
+  vertical-align: middle;
+  font-size: 0.875rem;
+  line-height: 0.6s;
+}
+.lastsection {
+  display: grid;
+  gap: 10px;
+  text-align: center;
+  font-family: Arial, Helvetica, sans-serif;
+}
+.lastsection p:first-child {
+  color: rgb(175, 172, 172);
+  font-size: 0.9rem;
+}
+.lastsection p:last-child {
+  color: rgb(5, 185, 5);
+}
+.lastsection p:last-child a {
+  text-decoration: none;
+  color: rgb(5, 185, 5);
+}
+.lastsection p:last-child a:hover {
+  text-decoration: underline;
+}
