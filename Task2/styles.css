@@ -35,9 +35,12 @@ main {
   padding-bottom: 10px;
   display: flex;
   flex-direction: column;
+  align-items: center;
 }
 .pagewrapper main .Login a {
   width: fit-content;
+  align-self: flex-start;
+  margin-bottom: auto;
 }
 .pagewrapper main .NewHere {
   grid-column: span 3;
@@ -74,7 +77,85 @@ main {
   align-items: center;
   margin-bottom: auto;
 }
-.pagewrapper main .NewHere button {
+.logininfo {
+  font-family: customfontbold;
+  font-size: 3.2rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: auto;
+  gap: 20px;
+}
+.logininfo h1 {
+  line-height: 0.7;
+}
+.logininfo h4 {
+  font-size: 1rem;
+  font-weight: lighter;
+  font-family: customfont;
+  color: rgb(158, 154, 154);
+}
+.logininfo nav {
+  display: flex;
+  height: fit-content;
+  gap: 16px;
+}
+.logininfo nav > a {
+  height: 54px;
+}
+.logininfo input[type="text"] {
+  all: unset;
+  width: 428px;
+  height: 48px;
+  border-radius: 20px;
+  background-color: #eef5f3;
+  font-family: customfontbold;
+  text-align: left;
+  padding-left: 16px;
+  padding-right: 16px;
+  align-content: center;
+}
+.paswordwithaneye {
+  display: flex;
+  width: 460px;
+  height: 48px;
+  border-radius: 20px;
+  background-color: #eef5f3;
+  font-family: customfontbold;
+  text-align: left;
+  padding-left: 16px;
+  padding-right: 16px;
+  align-content: center;
+}
+.logininfo input[type="password"] {
+  all: unset;
+  width: 95%;
+  vertical-align: middle;
+}
+fieldset {
+  all: unset;
+  padding-top: 7px;
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  align-items: center;
+  font-size: 0.8rem;
+  font-family: customfont;
+  color: rgb(158, 154, 154);
+  gap: 15px;
+  border-right: none;
+  border-bottom: none;
+  border-left: none;
+  border-top: 1px solid rgb(216, 213, 213);
+}
+fieldset span {
+  padding-left: 7px;
+  padding-right: 7px;
+}
+
+.pagewrapper main .NewHere button,
+input[name="finalbutton"] {
   all: unset;
   background-color: white;
   color: black;
@@ -85,19 +166,28 @@ main {
   height: 54px;
   border-radius: 30px;
 }
-.pagewrapper main .NewHere button:hover {
+input[name="finalbutton"] {
+  background-color: rgb(40, 180, 152);
+  width: 235px;
+  color: white;
+}
+.pagewrapper main .NewHere button:hover,
+input[name="finalbutton"]:hover {
   color: rgb(62, 128, 62);
   cursor: pointer;
   box-shadow: 0px 0px 8px 4px rgb(35, 65, 35);
 }
-
+.ete {
+  cursor: pointer;
+}
+.ete:hover {
+  filter: invert(37%) sepia(10%) saturate(2872%) hue-rotate(118deg)
+    brightness(92%) contrast(86%);
+}
 .logo {
   width: 140px;
   height: 45px;
-  align-self: flex-start;
-  justify-self: flex-start;
 }
-
 .closingimg {
   align-self: flex-end;
   margin-bottom: auto;
