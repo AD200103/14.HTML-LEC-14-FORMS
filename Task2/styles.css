@@ -124,14 +124,30 @@ main {
   background-color: #eef5f3;
   font-family: customfontbold;
   text-align: left;
-  padding-left: 16px;
-  padding-right: 16px;
+  /* padding-left: 16px;
+  padding-right: 16px; */
   align-content: center;
 }
+.logininfo input[type="text"]:focus {
+  background-color: white;
+  border: 1px solid #eef5f3;
+  width: 426.4px;
+  height: 46.4px;
+}
+
 .logininfo input[type="password"] {
   all: unset;
-  width: 95%;
+  width: 100%;
   vertical-align: middle;
+  padding-left: 16px;
+  margin-right: -42px;
+  padding-right: 43px;
+}
+.paswordwithaneye:focus,
+.logininfo input[type="password"]:focus {
+  background-color: white;
+  border: 1px solid #eef5f3;
+  border-radius: 20px;
 }
 fieldset {
   all: unset;
@@ -179,6 +195,7 @@ input[name="finalbutton"]:hover {
 }
 .ete {
   cursor: pointer;
+  margin-right: 16px;
 }
 .ete:hover {
   filter: invert(37%) sepia(10%) saturate(2872%) hue-rotate(118deg)
